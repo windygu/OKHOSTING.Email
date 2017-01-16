@@ -5,7 +5,7 @@
     <MinimumVisualStudioVersion>10.0</MinimumVisualStudioVersion>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{3FD5A55D-DF69-4C6A-8309-0600D7C1C80D}</ProjectGuid>
+    <ProjectGuid>{E3F6D841-3306-4342-AE94-6645483EBDC8}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>OKHOSTING.Email</RootNamespace>
@@ -44,7 +44,6 @@
     <Compile Include="Platform.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SecureSocketOptions.cs" />
-    <Compile Include="Server.cs" />
     <Compile Include="ISmtpClient.cs" />
   </ItemGroup>
   <ItemGroup>
