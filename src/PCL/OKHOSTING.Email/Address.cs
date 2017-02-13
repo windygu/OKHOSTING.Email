@@ -1,4 +1,6 @@
-﻿namespace OKHOSTING.Email
+﻿using System.Linq;
+
+namespace OKHOSTING.Email
 {
 	/// <summary>
 	/// An internet email address
@@ -64,6 +66,22 @@
 			else
 			{
 				return Name + " <" + FullAddress + ">";
+			}
+		}
+
+		public string User
+		{
+			get
+			{
+				return FullAddress.Split('@').First();
+			}
+		}
+
+		public string Domain
+		{
+			get
+			{
+				return FullAddress.Split('@').Last();
 			}
 		}
 	}
