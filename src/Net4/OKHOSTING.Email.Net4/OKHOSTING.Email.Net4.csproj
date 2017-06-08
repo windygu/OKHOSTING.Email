@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{FDEBEB21-BF67-49DB-9483-D98F4F1E7BE8}</ProjectGuid>
+    <ProjectGuid>{51E35F00-3D80-407B-AD82-926AA94B6290}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>OKHOSTING.Email.Net4</RootNamespace>
