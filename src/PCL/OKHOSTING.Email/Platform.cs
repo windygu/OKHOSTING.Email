@@ -12,7 +12,7 @@
 
 		public static ISmtpClient CreateSmtpClient()
 		{
-			return Core.BaitAndSwitch.Create<ISmtpClient>(KnownPlatforms);
+			return Core.BaitAndSwitch.Create<ISmtpClient>(KnownPlatforms, null);
 		}
 	}
 }

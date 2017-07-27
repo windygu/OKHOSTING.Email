@@ -5,7 +5,7 @@ using TestStack.White;
 using TestStack.White.UIItems.WindowItems;
 using System.Threading;
 
-namespace OKHOSTING.ERP.Hosting.Mail.Clients
+namespace OKHOSTING.Email.Net4.ClientSetup
 {
 	/// <summary>
 	/// Automatize to create account profile in outlook.

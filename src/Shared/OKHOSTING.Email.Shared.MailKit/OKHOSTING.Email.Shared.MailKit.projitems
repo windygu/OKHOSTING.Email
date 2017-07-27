@@ -9,6 +9,7 @@
     <Import_RootNamespace>OKHOSTING.Email.Shared.MailKit</Import_RootNamespace>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Pop3Client.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)SmtpClient.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Parser.cs" />
   </ItemGroup>

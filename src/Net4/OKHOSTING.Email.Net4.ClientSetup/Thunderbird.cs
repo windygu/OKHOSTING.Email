@@ -5,7 +5,7 @@ using TestStack.White.UIItems.WindowItems;
 using TestStack.White.InputDevices;
 using System.Threading;
 
-namespace OKHOSTING.ERP.Hosting.Mail.Clients
+namespace OKHOSTING.Email.Net4.ClientSetup
 {
 	public class Thunderbird
 	{
@@ -48,8 +48,9 @@ namespace OKHOSTING.ERP.Hosting.Mail.Clients
 			var windows = application.GetWindows();
 			foreach (var item in windows)
 			{
-				if (item.Name == "Integración con el sistema" || item.Name == "Bienvenido a Thunderbird")
+				if (item.Name == "Welcome to Thunderbird" || item.Name == "Bienvenido a Thunderbird")
 				{
+					item.Close();
 					var language = Thread.CurrentThread.CurrentCulture.NativeName;
 					if (language.ToString() == "English (United States)")
 					{
@@ -66,7 +67,7 @@ namespace OKHOSTING.ERP.Hosting.Mail.Clients
 			}
 		}
 
-		public static TestStack.White.UIItems.Button ClickButton(string nameButton, Window window)
+		private static TestStack.White.UIItems.Button ClickButton(string nameButton, Window window)
 		{
 			TestStack.White.UIItems.Button button = null;
 			try
